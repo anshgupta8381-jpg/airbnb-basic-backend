@@ -1,0 +1,26 @@
+<style>
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .nav-link.active {
+    background: rgba(0, 0, 0, 0.2);
+  }
+</style>
+
+<nav style="background: #e03131; padding: 12px 24px; display: flex; gap: 24px; align-items: center;">
+    <a href="/" class="nav-link <%= currentPath === '/index' ? 'active' : '' %>">Airbnb</a>
+    <a href="/homes" class="nav-link <%= currentPath === '/home' ? 'active' : '' %>">Homes List</a>
+    <a href="/favourites" class="nav-link <%= currentPath === '/favourites' ? 'active' : '' %>">Favourites</a>
+    <a href="/bookings" class="nav-link <%= currentPath === '/bookings' ? 'active' : '' %>">Bookings</a>
+    <a href="/host/host-home-list" class="nav-link <%= currentPath === '/host-home' ? 'active' : '' %>">Host Homes</a>
+    <a href="/host/add-home" class="nav-link <%= currentPath === '/host/add-home' ? 'active' : '' %>">Add Home</a>
+</nav>
