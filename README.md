@@ -22,3 +22,5 @@ A full-stack Airbnb-inspired rental app built with Node.js, Express &amp; EJS. H
 - **Storage** — File-based JSON (no database)
 - **Routing** — MVC Architecture
 
+LIVE ON 
+https://airbnb-basic-backend-1.onrender.com/
